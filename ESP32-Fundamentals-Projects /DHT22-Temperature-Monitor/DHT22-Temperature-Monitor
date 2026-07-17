@@ -1,1 +1,38 @@
+#include <DHT.h>
+
+const int led = 25;
+const int dhtpin = 23;
+const int dhttype = DHT22;
+
+DHT dht (dhtpin , dhttype);
+
+void setup() {
+  Serial.begin(115200);
+  pinMode(led, OUTPUT);
+  dht.begin();
+  
+}
+
+void loop() {
+  float temperature = dht.readTemperature();
+  float humidity = dht.readHumidity();
+  if (temperature > 30 )
+  {
+    digitalWrite(led,HIGH);
+    delay(100);
+  }
+  else
+  {
+    digitalWrite(led,LOW);
+    delay(100);
+  }
+  
+
+Serial.print("Temperature: ");
+Serial.println(temperature);
+
+Serial.print ("Humidity: ");
+Serial.println (humidity);
+}
+
 
