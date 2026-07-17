@@ -1,1 +1,66 @@
+const int red = 23;
+const int green = 22;
+const int blue = 21;
+
+
+void setup()
+ {
+  // put your setup code here, to run once:
+  pinMode(red, OUTPUT);
+  pinMode(green, OUTPUT);
+  pinMode(blue, OUTPUT);
+
+}
+
+void loop()
+{
+  //RED ON
+  digitalWrite(red, HIGH);
+  digitalWrite(green, LOW);
+  digitalWrite(blue, LOW);
+  delay(1000);
+
+  //GREEN ON
+  digitalWrite(red, LOW);
+  digitalWrite(green, HIGH);
+  digitalWrite(blue, LOW);
+  delay(1000);
+
+  //BLUE ON 
+  digitalWrite(red, LOW);
+  digitalWrite(green, LOW);
+  digitalWrite(blue, HIGH);
+  delay(1000);
+
+  //YELLOW ON 
+  digitalWrite(red, HIGH);
+  digitalWrite(green, HIGH);
+  digitalWrite(blue, LOW);
+  delay(1000);
+
+  //MAGENTA ON 
+  digitalWrite(red, HIGH);
+  digitalWrite(green, LOW);
+  digitalWrite(blue, HIGH);
+  delay(1000);
+
+  //CYAN ON
+  digitalWrite(red, LOW);
+  digitalWrite(green, HIGH);
+  digitalWrite(blue, HIGH);
+  delay(1000);
+
+  //WHITE ON 
+  digitalWrite(red, HIGH);
+  digitalWrite(green, HIGH);
+  digitalWrite(blue, HIGH);
+  delay(1000);
+
+  //LIGHT OFF
+  digitalWrite(red, LOW);
+  digitalWrite(green, LOW);
+  digitalWrite(blue, LOW);
+  delay(1000);
+  
+}
 
