@@ -1,1 +1,21 @@
+const int led = 23;
+const int button = 22;
+void setup() {
+  pinMode(led, OUTPUT);
+  pinMode(button, INPUT_PULLUP);
+}
+
+void loop() {
+
+  int  buttonstate = digitalRead(button);
+
+  if (buttonstate == LOW )
+  {
+     digitalWrite(led,HIGH);
+  }
+  else
+  { 
+     digitalWrite(led, LOW);
+  }   
+}
 
