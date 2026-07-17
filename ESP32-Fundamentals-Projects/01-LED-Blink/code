@@ -1,1 +1,17 @@
+const int RED = 21;
+
+void setup() 
+{
+  // put your setup code here, to run once:
+  pinMode(RED , OUTPUT);
+}
+
+void loop()
+ {
+  digitalWrite(RED , HIGH);
+  delay(500);
+  digitalWrite(RED , LOW);
+  delay(500);
+   // this speeds up the simulation
+}
 
